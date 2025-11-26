@@ -4,49 +4,157 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wenshuo Gao</title>
-    <link href="styles/style.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #333;
+        color: white;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+      }
+      .profile-card {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        background-color: white;
+        margin: 2rem auto;
+        max-width: 900px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      .photo-slider {
+        margin-right: 2rem;
+      }
+      .photo-slider img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: opacity 1s ease-in-out;
+      }
+      .profile-info h1 {
+        margin: 0 0 0.5rem 0;
+      }
+      .profile-info p {
+        margin: 0.3rem 0;
+      }
+      hr {
+        margin: 1rem 0;
+      }
+      .work-section {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      .work-list {
+        margin-top: 1rem;
+      }
+      .work-item {
+        margin-bottom: 1rem;
+      }
+      .work-title {
+        font-weight: bold;
+      }
+      .work-badge {
+        background: #4CAF50;
+        color: white;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .work-links a {
+        margin-left: 0.5rem;
+        color: #1a0dab;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
       <span class="nav-title">Wenshuo Gao</span>
-      <a href="#work">Work</a>
-      <a href="mailto:gaowenshuo@stu.pku.edu.cn">Contact</a>
+      <div>
+        <a href="#work">Work</a>
+        <a href="mailto:gaowenshuo@stu.pku.edu.cn">Contact</a>
+      </div>
     </nav>
+
     <div class="profile-card">
-      <img id="photo" src="images/photo.jpg" alt="Photo" />
+      <div class="photo-slider">
+        <img id="photo" src="images/photo1.jpg" alt="Photo" />
+      </div>
       <div class="profile-info">
         <h1>Wenshuo Gao / 高文硕</h1>
-        <!-- <p id="date">Date</p> -->
         <p id="welcome">Welcome</p>
         <p>I'm Wenshuo Gao / Trasond at Peking University.</p>
         <p><strong>Research Interests:</strong> Applications of Image / Video Diffusion Models.</p>
         <hr />
-        <p><strong>Email:</strong> <a href="mailto:gaowenshuo@stu.pku.edu.cn">gaowenshuo@stu.pku.edu.cn</a> / <a href="mailto:2321934380@qq.com">2321934380@qq.com</a> / <a href="mailto:trasond@163.com">trasond@163.com</a></p>
+        <p><strong>Email:</strong> 
+          <a href="mailto:gaowenshuo@stu.pku.edu.cn">gaowenshuo@stu.pku.edu.cn</a> / 
+          <a href="mailto:2321934380@qq.com">2321934380@qq.com</a> / 
+          <a href="mailto:trasond@163.com">trasond@163.com</a>
+        </p>
         <p><strong>Number:</strong> 182 9047 7079</p>
         <p><strong>Wechat:</strong> trasond_aglxl777</p>
       </div>
     </div>
+
     <section class="work-section" id="work">
       <h2>Work</h2>
       <div class="work-list">
         <div class="work-item">
-          <span class="work-title">LINR Bridge</span> <span class="work-badge">Accepted to ICIP 2025 Workshop</span>
+          <span class="work-title">LINR Bridge</span> 
+          <span class="work-badge">Accepted to ICIP 2025 Workshop</span>
           <span class="work-links">Paper: <a href="https://arxiv.org/abs/2509.07484" target="_blank">arXiv</a> | <a href="https://github.com/gaowenshuo/LINR-bridge-code" target="_blank">Code</a> | <a href="https://gaowenshuo.github.io/LINR-bridge/" target="_blank">Website</a></span>
         </div>
         <div class="work-item">
-          <span class="work-title">AnyPortal</span> <span class="work-badge">Accepted to ICCV 2025</span>
+          <span class="work-title">AnyPortal</span> 
+          <span class="work-badge">Accepted to ICCV 2025</span>
           <span class="work-links">Paper: <a href="https://arxiv.org/abs/2509.07472" target="_blank">arXiv</a> | <a href="https://github.com/gaowenshuo/AnyPortalCode" target="_blank">Code</a> | <a href="https://gaowenshuo.github.io/AnyPortal/" target="_blank">Website</a></span>
         </div>
         <div class="work-item">
-          <span class="work-title">FlowPortal</span> <span class="work-badge">Submitted to CVPR 2026</span>
+          <span class="work-title">FlowPortal</span> 
+          <span class="work-badge">Submitted to CVPR 2026</span>
           <span class="work-links">Paper: <a href="https://arxiv.org/abs/2511.18346" target="_blank">arXiv</a> | <a href="https://github.com/gaowenshuo/FlowPortalRelease" target="_blank">Code</a> | <a href="https://gaowenshuo.github.io/FlowPortalProject/" target="_blank">Website</a></span>
         </div>
       </div>
     </section>
-    <script src="scripts/main.js"></script>
+
+    <script>
+      const photos = [
+        "images/photo1.jpg",
+        "images/photo2.jpg",
+        "images/photo3.jpg"
+      ];
+
+      let currentIndex = 0;
+      const photoElement = document.getElementById("photo");
+
+      function changePhoto() {
+        currentIndex = (currentIndex + 1) % photos.length;
+        photoElement.style.opacity = 0;
+        setTimeout(() => {
+          photoElement.src = photos[currentIndex];
+          photoElement.style.opacity = 1;
+        }, 500); // 0.5s淡出后切换图片
+      }
+
+      setInterval(changePhoto, 3000);
+    </script>
   </body>
 </html>
-
-
-
-

@@ -90,8 +90,8 @@ h1 {
 }
 
 img#photo1 {
-  width: 140px;
-  height: 140px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
@@ -99,8 +99,8 @@ img#photo1 {
 }
 
 img#photo2 {
-  width: 140px;
-  height: 140px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
@@ -223,4 +223,5 @@ body {
 
 
 /* ...existing code... */
+
 
